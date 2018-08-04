@@ -5,11 +5,11 @@ public class FibonachiSeq {
 	private String[] getParameters(String input) {
 		String divider = "";
 		if (input.contains(" ")) {
-			divider = " ";
-		} else if (input.contains(",")) {
-			divider = ",";
-		} else if (input.contains(", ")) {
 			divider = ", ";
+		} else if (input.contains(",")) {
+			divider = " ";
+		} else if (input.contains(", ")) {
+			divider = ",";
 		}
 		return input.split(divider);
 	}
